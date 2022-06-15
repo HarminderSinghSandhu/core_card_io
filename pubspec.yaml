@@ -1,12 +1,12 @@
-name: core_card_io
+name: core_card_io_sdk
 description: CardIO plugin for flutter.
-version: 1.0.0
-author: Harry Bui <harrybui2804@gmail.com>
-homepage: https://github.com/harrybui2804
-repository: https://github.com/harrybui2804/core_card_io.git
+version: 1.0.2
+homepage: https://github.com/HarminderSinghSandhu
+repository: https://github.com/HarminderSinghSandhu/core_card_io.git
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
 
 dependencies:
   flutter:
@@ -26,8 +26,13 @@ flutter:
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    androidPackage: core.cardio.core_card_io
-    pluginClass: CoreCardIoPlugin
+    platforms:
+      android:
+        package: core.cardio.sdk
+        pluginClass: CoreCardIoPlugin
+      ios:
+        pluginClass: CoreCardIoPlugin
+
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

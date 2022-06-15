@@ -2,8 +2,8 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'core_card_io'
-  s.version          = '1.0.0'
+  s.name             = 'core_card_io_sdk'
+  s.version          = '1.0.2'
   s.summary          = 'CardIO flutter plugin.'
   s.description      = <<-DESC
   CardIO flutter plugin.

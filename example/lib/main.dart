@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:core_card_io/core_card_io.dart';
+import 'package:core_card_io/core_card_io_sdk.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,11 +22,11 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
+    String platformVersion="";
     Map<String, dynamic> details;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = "";
+      // platformVersion = await CoreCardIo.getPlatformVersion();
       details = await CoreCardIo.scanCard({
         "hideCardIOLogo": true,
         "requireExpiry": true,

@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:core_card_io/core_card_io.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('core_card_io');
@@ -15,7 +14,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await CoreCardIo.platformVersion, '42');
-  });
+  // test('getPlatformVersion', () async {
+  //   expect(await CoreCardIo.platformVersion, '42');
+  // });
 }

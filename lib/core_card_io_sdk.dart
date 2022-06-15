@@ -9,4 +9,9 @@ class CoreCardIo {
   static Future<dynamic> scanCard(Map<String, dynamic> args) {
     return _channel.invokeMethod('scanCard', args);
   }
+
+
+  static Future<dynamic> getPlatformVersion() {
+    return _channel.invokeMethod('getPlatformVersion', null);
+  }
 }
