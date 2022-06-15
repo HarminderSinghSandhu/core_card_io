@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'core_card_io_sdk'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'CardIO flutter plugin.'
   s.description      = <<-DESC
   CardIO flutter plugin.
