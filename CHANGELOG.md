@@ -12,3 +12,6 @@ IOS podspec bug fix
 
 ## 1.0.3
 IOS podspec bug fix
+
+## 1.0.6
+null safety enable
